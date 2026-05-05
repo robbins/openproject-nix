@@ -20,8 +20,8 @@
 }:
 
 let
-  version = "17.2.2";
-  opfHash = "sha256-YrLPqWKMWgjBwywntul/SmcI5ed0lK8xmUtKx1qIQAo=";
+  version = "17.2.2-enterprise";
+  opfHash = "sha256-tthlJaAhSsOvod9jL3tMRrX3lDplwp/gY4tUP1JGoJU=";
   commonmarkerCargoDepsHash = "sha256-y0w9rJa2HG9zbX1thf0JznuhSvi7VL5pzMoskZzziUc=";
   prometheusClientMmapDepsHash = "sha256-7jqaf5RIsc9gq98WBCe3Dd3Fv2X+4echdXU1FSK/xnE=";
   npmDepsHash = "sha256-dWWf8ukDCFwc2UuUUqFQHhpWVyJKzo215WiU96U7SPc=";
@@ -128,7 +128,7 @@ let
   };
 
   origSrc = fetchFromGitHub {
-    owner = "opf";
+    owner = "robbins";
     repo = "openproject";
     rev = "v${version}";
     hash = opfHash;
